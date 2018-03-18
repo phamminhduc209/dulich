@@ -1,3 +1,98 @@
+(function($){
+	"use strict";
+	// Slide Carousel
+	$(document).ready(function () {
+	    $(".owl-carousel").each(function (index, el) {
+	        var config = $(this).data();
+	        config.navText = ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'];
+	        config.smartSpeed = "800";
+	        if ($(this).hasClass('owl-style2')) {
+	            config.animateOut = "fadeOut";
+	            config.animateIn = "fadeIn";
+	        }
+	        if ($(this).hasClass('dotsData')) {
+	            config.dotsData = "true";
+	        }
+	        $(this).owlCarousel(config);
+	    });
+	});
+
+	// $("ul.mobile-left>li>i").click(function () {
+	// 	if ($(this).hasClass("fa-plus")) {
+	// 	    $(this).removeClass("fa-plus");
+	// 	    $(this).addClass("fa-minus");
+	// 	} else {
+	// 	    $(this).removeClass("fa-minus");
+	// 	    $(this).addClass("fa-plus");
+	// 	}
+	// 	$(this).parent().children(".submenu").slideToggle();
+	// });
+	// $("ul.mobile-left li ul li i").click(function () {
+	// 	if ($(this).hasClass("fa-plus")) {
+	// 	    $(this).removeClass("fa-plus");
+	// 	    $(this).addClass("fa-minus");
+	// 	} else {
+	// 	    $(this).removeClass("fa-minus");
+	// 	    $(this).addClass("fa-plus");
+	// 	}
+	// 	$(this).parent().children("ul").slideToggle();
+	// });
+
+	// menuLeftOnload();
+
+	// function menuLeftOnload() {
+	// 	var checkMneu = document.getElementById("mobile-menu-toggle").checked;
+	// 	if (checkMneu == true) {
+	// 	    document.getElementById("mobile-menu-toggle").checked = false;
+	// 	    document.getElementById('mainHideMenu').style.display = 'none';
+	// 	}
+	// }
+
+	// function menuLeft() {
+	// 	var checkMneu = document.getElementById("mobile-menu-toggle").checked;
+	// 	if (checkMneu == false) {
+	// 	    document.getElementById('mainHideMenu').style.display = 'block';
+	// 	} else {
+	// 	    document.getElementById("mobile-menu-toggle").checked = false;
+	// 	    document.getElementById('mainHideMenu').style.display = 'none';
+	// 	}
+	// }
+
+	$(document).ready(function() {
+        $(".connect_fanpage").click(function(){
+            $(this).toggleClass("chetchamayne");
+            $(".connect_fb_content").slideToggle('500');
+        });
+    });
+
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+
+    // $(function () {
+    //     $('#datetimepicker1').datetimepicker();
+    // });
+
+	$(document).ready(function(){
+		var date_input=$('input[name="date"]'); //our date input has the name "date"
+		var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+		date_input.datepicker({
+			format: 'mm/dd/yyyy',
+			container: container,
+			todayHighlight: true,
+			autoclose: true,
+		})
+	});
+
+	$(document).ready(function() {
+       $(".imges").click(function(){
+         $(this).toggleClass("addformbox");
+         $(".form-dv").slideToggle('500');
+        });      
+  	});
+
+})(jQuery); // End of use strict
+
 $(function(){
 	/* Mega Menu */
 	$('.mega-menu-title').click(function(){

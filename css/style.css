@@ -17,6 +17,7 @@
 @import url(../lib/font-awesome/font-awesome.min.css);
 @import url(../lib/nivo-slider/nivo-slider.css);
 @import url(../lib/datepicker/bootstrap-datepicker3.css);
+@import url(../lib/bx-slider/jquery.bxslider.css);
 
 
 /*===== Layout Style =====*/
@@ -244,8 +245,6 @@ nav {
     min-width: 280px;
     display: none;
     background: #fff;
-    \: 0 0 8px rgba(0, 0, 0, .3);
-    box-shadow: 1px 1px 1px #999;
     opacity: 0;
     -o-transform-origin: 0% 0%;
     -ms-transform-origin: 0% 0%;
@@ -255,6 +254,9 @@ nav {
     -ms-transition: -ms-transform 0.4s, opacity 0.4s;
     -moz-transition: -moz-transform 0.4s, opacity 0.4s;
     -webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+    -webkit-box-shadow: 2px 2px 4px -1px rgba(143,143,143,1);
+    -moz-box-shadow: 2px 2px 4px -1px rgba(143,143,143,1);
+    box-shadow: 2px 2px 4px -1px rgba(143,143,143,1);
 }
 
 .sky-mega-menu li>.submenu .des_dm {
@@ -1381,11 +1383,12 @@ p.price-hotel-now {
 }
 
 .pricename {
-    background: #0b5f24;
+    background: #02486f;
     float: left;
     display: inline-block;
     padding: 18px 8px;
     font-size: 18px;
+    height: 57px;
     text-transform: uppercase;
     color: #fff;
     position: relative;
@@ -1396,7 +1399,7 @@ p.price-hotel-now {
     height: 0px;
     border-bottom: 10px solid transparent;
     border-top: 10px solid transparent;
-    border-left: 10px solid #0b5f24;
+    border-left: 10px solid #02486f;
     /* Tam gi?c tr?i du?c d? m?u */
     position: absolute;
     content: "";
@@ -7144,4 +7147,67 @@ input.codecapcha {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
+}
+
+.box-hotines {
+  position: fixed;
+  bottom: 0;
+  left: 5px;
+  border-radius: 7px 7px 0 0;
+  background: #fff;
+  padding: 0px;
+  box-shadow: 0px 1px 2px 1px #333;
+}
+.tile-htl {
+  background: #f36f21;
+  padding: 6px 13px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 7px 7px 0 0;
+}
+.tile-htl .fa-volume-control-phone {
+  background: #fff;
+  color: #f36f21;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  border-radius: 100%;
+  font-size: 17px;
+  line-height: 25px;
+  transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  position: relative;
+  vertical-align: middle;
+}
+.tile-htl .fa-volume-control-phone:before {
+  position: absolute;
+  content: "\f2a0";
+  left: 7px;
+  top: -1px;
+  font-family: FontAwesome;
+  font-size: 15px;
+}
+.tile-htl span {
+  margin: 0 14px;
+}
+.content-box-hotline {
+  display: block;
+}
+.content-box-hotline ul {
+  margin-bottom: 0;
+}
+.content-box-hotline ul li {
+  line-height: 30px;
+  display: block;
+  padding-left: 10px;
+  border-bottom: 1px solid #f36f21;
+}
+.content-box-hotline ul li strong {
+  float: right;
+  margin-right: 10px;
+  color: #f36f21;
+}
+.content-box-hotline ul li:last-child {
+  border-bottom: none;
 }

@@ -1,3 +1,22 @@
+menuLeftOnload();
+
+function menuLeftOnload() {
+	var checkMneu = document.getElementById("mobile-menu-toggle").checked;
+	if (checkMneu == true) {
+	    document.getElementById("mobile-menu-toggle").checked = false;
+	    document.getElementById('mainHideMenu').style.display = 'none';
+	}
+}
+
+function menuLeft() {
+	var checkMneu = document.getElementById("mobile-menu-toggle").checked;
+	if (checkMneu == false) {
+	    document.getElementById('mainHideMenu').style.display = 'block';
+	} else {
+	    document.getElementById("mobile-menu-toggle").checked = false;
+	    document.getElementById('mainHideMenu').style.display = 'none';
+	}
+}
 (function($){
 	"use strict";
 	// Slide Carousel
@@ -17,46 +36,26 @@
 	    });
 	});
 
-	// $("ul.mobile-left>li>i").click(function () {
-	// 	if ($(this).hasClass("fa-plus")) {
-	// 	    $(this).removeClass("fa-plus");
-	// 	    $(this).addClass("fa-minus");
-	// 	} else {
-	// 	    $(this).removeClass("fa-minus");
-	// 	    $(this).addClass("fa-plus");
-	// 	}
-	// 	$(this).parent().children(".submenu").slideToggle();
-	// });
-	// $("ul.mobile-left li ul li i").click(function () {
-	// 	if ($(this).hasClass("fa-plus")) {
-	// 	    $(this).removeClass("fa-plus");
-	// 	    $(this).addClass("fa-minus");
-	// 	} else {
-	// 	    $(this).removeClass("fa-minus");
-	// 	    $(this).addClass("fa-plus");
-	// 	}
-	// 	$(this).parent().children("ul").slideToggle();
-	// });
-
-	// menuLeftOnload();
-
-	// function menuLeftOnload() {
-	// 	var checkMneu = document.getElementById("mobile-menu-toggle").checked;
-	// 	if (checkMneu == true) {
-	// 	    document.getElementById("mobile-menu-toggle").checked = false;
-	// 	    document.getElementById('mainHideMenu').style.display = 'none';
-	// 	}
-	// }
-
-	// function menuLeft() {
-	// 	var checkMneu = document.getElementById("mobile-menu-toggle").checked;
-	// 	if (checkMneu == false) {
-	// 	    document.getElementById('mainHideMenu').style.display = 'block';
-	// 	} else {
-	// 	    document.getElementById("mobile-menu-toggle").checked = false;
-	// 	    document.getElementById('mainHideMenu').style.display = 'none';
-	// 	}
-	// }
+	$("ul.mobile-left>li>i").click(function () {
+		if ($(this).hasClass("fa-plus")) {
+		    $(this).removeClass("fa-plus");
+		    $(this).addClass("fa-minus");
+		} else {
+		    $(this).removeClass("fa-minus");
+		    $(this).addClass("fa-plus");
+		}
+		$(this).parent().children(".submenu").slideToggle();
+	});
+	$("ul.mobile-left li ul li i").click(function () {
+		if ($(this).hasClass("fa-plus")) {
+		    $(this).removeClass("fa-plus");
+		    $(this).addClass("fa-minus");
+		} else {
+		    $(this).removeClass("fa-minus");
+		    $(this).addClass("fa-plus");
+		}
+		$(this).parent().children("ul").slideToggle();
+	});
 
 	$(document).ready(function() {
         $(".connect_fanpage").click(function(){
@@ -83,9 +82,7 @@
 	}, 'slow');
 	});
 
-    // $(function () {
-    //     $('#datetimepicker1').datetimepicker();
-    // });
+    // $('#datetimepicker1').datetimepicker();
 
 	$(document).ready(function(){
 		var date_input=$('input[name="date"]'); //our date input has the name "date"
@@ -98,12 +95,27 @@
 		})
 	});
 
+	$(document).ready(function(){
+        $('.bxslidertour').bxSlider({
+        pagerCustom: '#bx-pager-tour',
+        auto: true,
+        autoControls: true
+        });
+    });
+
+
 	$(document).ready(function() {
        $(".imges").click(function(){
          $(this).toggleClass("addformbox");
          $(".form-dv").slideToggle('500');
         });      
   	});
+
+	$(document).ready(function() {
+         $(".tile-htl").click(function(){
+           $(".content-box-hotline").slideToggle('500');
+         });
+    });
 
 })(jQuery); // End of use strict
 
@@ -133,23 +145,6 @@ $(function(){
 		}
 		e.preventDefault();
 	})
-	
-	/* Brands Slider */
-	$("#brands .owl").owlCarousel({
-		autoPlay : false,
-		items : 5,
-		itemsDesktop : [1199,4],
-		itemsDesktopSmall : [991,3],
-		itemsTablet: [767,2],
-		itemsMobile : [480,2],
-		slideSpeed : 1000,
-		paginationSpeed : 1000,
-		rewindSpeed : 1000,
-		navigation : true,
-		stopOnHover : true,
-		pagination : false,
-		scrollPerPage:true,
-	});
 });
 
 /* Time Sale */

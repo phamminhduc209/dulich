@@ -10,7 +10,7 @@
 
 /*===== Import Files =====*/
 /* Fonts */
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&subset=latin-ext,vietnamese');
 /*  Css */
 @import url(../lib/bootstrap/bootstrap.min.css);
 @import url(../lib/carousel/owl.carousel.min.css);
@@ -23,7 +23,7 @@
 body {
     font-size: 14px;
     color: #404040;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     line-height: 1.15;
     font-weight: 400;
     margin: 0 auto;
@@ -52,6 +52,9 @@ input[type="tel"] {
   width: 100%;
   border: none;
   cursor: pointer;
+}
+b, strong {
+    font-weight: bold;
 }
 ul,
 ol {
@@ -98,7 +101,7 @@ h1, h2, h3, h4, h5, h6, p { margin: 0;}
 a {
     text-decoration: none;
     color: #444;
-    font-family: Roboto;
+    font-family: Open Sans;
 }
 
 a:hover,
@@ -182,7 +185,7 @@ nav {
 }
 
 .sky-mega-menu li:hover {
-    border-bottom: 3px solid #3167B0;
+    border-bottom: 3px solid #f36f21;
 }
 
 .sky-mega-menu li span img.image_hover {
@@ -238,10 +241,7 @@ nav {
     z-index: 1000;
     top: 45px;
     left: 0;
-    /* width: 100%; */
-    min-width: 215px;
-    /* padding: 15px; */
-    /* left: -9999px; */
+    min-width: 280px;
     display: none;
     background: #fff;
     \: 0 0 8px rgba(0, 0, 0, .3);
@@ -255,7 +255,6 @@ nav {
     -ms-transition: -ms-transform 0.4s, opacity 0.4s;
     -moz-transition: -moz-transform 0.4s, opacity 0.4s;
     -webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
-    /* padding-bottom: 10px; */
 }
 
 .sky-mega-menu li>.submenu .des_dm {
@@ -270,7 +269,7 @@ nav {
     display: block;
     line-height: 20px;
     font-size: 12px;
-    font-family: Roboto, Helvetica, sans-serif;
+    font-family: Open Sans, Helvetica, sans-serif;
 }
 
 .sky-mega-menu li>.submenu .des_dm img {
@@ -329,7 +328,7 @@ nav {
 
 .list_mn ul li:hover {
     border-bottom: none;
-    background: #3167B0;
+    background: #f36f21;
 }
 
 .list_mn ul li:hover a,
@@ -339,18 +338,11 @@ nav {
 }
 
 .sky-mega-menu li li {
-    /* display: inline-block; */
-    float: left;
-    /* border-width: 0; */
+    display: block; 
     margin-right: 0;
     margin-top: 10px;
     line-height: 25px;
     width: 100%;
-    float: left;
-    /* border-top-width: 1px; */
-    /* white-space: normal; */
-    /* width: 50%; */
-    /* text-align: left; */
     padding-left: 0;
     margin-left: 0;
 }
@@ -358,14 +350,14 @@ nav {
 .sky-mega-menu li li a:after {
     position: absolute;
     left: 0px;
-    color: #59aeca;
+    color: #0082ca;
     top: 9px;
     font: normal normal normal 14px/1 FontAwesome;
     content: "\f105";
 }
 
 .sky-mega-menu li li a {
-    color: #59aeca;
+    color: #0082ca;
     border: none;
     display: block;
     font-weight: normal;
@@ -728,7 +720,7 @@ span.kye_login i {
 .bg_menu {
     float: left;
     width: 100%;
-    background: #59aeca;
+    background: #0082ca;
     height: 52px;
 }
 
@@ -799,7 +791,7 @@ p.members a {
 }
 
 .v2-home-pr-item {
-    font-family: Roboto;
+    font-family: Open Sans;
     background: #fff;
     position: relative;
     margin: 10px 10px;
@@ -854,7 +846,7 @@ li {
 }
 
 .tab-intro {
-    background: #59aeca;
+    background: #0082ca;
     border-radius: 30px 0;
     padding: 19px;
     color: #fff;
@@ -881,7 +873,7 @@ li {
 }
 
 .slidetop {
-    border: 2px dashed #59aeca;
+    border: 2px dashed #0082ca;
     border-radius: 5px;
     padding: 7px;
     text-align: center;
@@ -893,7 +885,7 @@ li {
 
 a.left.carousel-control,
 a.right.carousel-control {
-    background: #3167B0;
+    background: #f36f21;
     opacity: 1;
     width: 35px;
     height: 35px;
@@ -963,16 +955,29 @@ a.right.carousel-control {
 }
 
 .home-pr-tour {
-    border: 1px solid #eee;
     position: relative;
     margin-bottom: 20px;
     background: #fff;
+    transition: all .3s;
+    -webkit-box-shadow: 2px 2px 4px -1px rgba(143,143,143,1);
+    -moz-box-shadow: 2px 2px 4px -1px rgba(143,143,143,1);
+    box-shadow: 2px 2px 4px -1px rgba(143,143,143,1);
+}
+
+.home-pr-tour:before,
+.home-pr-tour:after {
+  content: "";
+  display: table;
+}
+
+.home-pr-tour:after {
+  clear: both;
 }
 
 .tit-news-details h1 {
     margin-top: 0;
     font-size: 18px;
-    color: #3167B0;
+    color: #f36f21;
     margin-bottom: 15px;
 }
 
@@ -1011,18 +1016,18 @@ p.dates i {
 }
 
 .item-news-related h3 a:hover {
-    color: #3167B0;
+    color: #f36f21;
 }
 
 .block-cm {
-    border: 1px solid #59aeca;
+    border: 1px solid #0082ca;
     padding: 10px 20px 0;
     margin-bottom: 20px;
 }
 
 .tit-cm-cn {
     text-transform: uppercase;
-    color: #59aeca;
+    color: #0082ca;
     font-size: 15px;
     margin-bottom: 10px;
 }
@@ -1099,7 +1104,7 @@ p.dates i {
 }
 
 .info-news-item h3 a:hover {
-    color: #3167B0;
+    color: #f36f21;
 }
 
 .info-news-item h3 {
@@ -1125,11 +1130,11 @@ p.dates i {
 a.view-detail {
     float: right;
     margin-top: 5px;
-    color: #59aeca;
+    color: #0082ca;
 }
 
 a.view-detail:hover {
-    color: #3167B0;
+    color: #f36f21;
 }
 
 .short-news {
@@ -1146,7 +1151,7 @@ a.view-detail:hover {
 
 .tit-cm-cn {
     text-transform: uppercase;
-    color: #59aeca;
+    color: #0082ca;
     font-size: 15px;
     margin-bottom: 10px;
 }
@@ -1162,7 +1167,7 @@ a.view-detail:hover {
 }
 
 .block-cm li:hover a {
-    color: #3167B0;
+    color: #f36f21;
 }
 
 .block-cm ul li:hover {
@@ -1206,7 +1211,7 @@ a.view-detail:hover {
 }
 
 .search-hotel {
-    border: 1px solid #59aeca;
+    border: 1px solid #0082ca;
     padding: 15px;
     text-align: center;
     margin-bottom: 20px;
@@ -1248,13 +1253,13 @@ a.view-detail:hover {
 
 .titsearch {
     text-transform: uppercase;
-    color: #59aeca;
+    color: #0082ca;
     font-size: 15px;
     margin-bottom: 15px;
 }
 
 p.sales-hotel {
-    color: #3167B0;
+    color: #f36f21;
     float: left;
     margin-bottom: 0;
     line-height: 23px;
@@ -1293,7 +1298,7 @@ p.price-hotel-old strong {
 
 p.price-hotel-now {
     float: left;
-    color: #59aeca;
+    color: #0082ca;
     margin-left: 5px;
     font-size: 16px;
     line-height: 34px;
@@ -1304,10 +1309,6 @@ p.price-hotel-now {
     margin-top: 7px;
     line-height: 20px;
     /* height: 27px; */
-}
-
-.content_homes ul li p {
-    margin-bottom: 7px;
 }
 
 .content-hotel-home p.address i {
@@ -1338,7 +1339,7 @@ p.price-hotel-now {
 }
 
 .address-hotel p i {
-    color: #3167B0;
+    color: #f36f21;
     font-size: 17px;
     margin-right: 5px;
 }
@@ -1362,7 +1363,7 @@ p.price-hotel-now {
     display: inline-block;
     border: 1px solid #eee;
     border-bottom: none;
-    color: #3167B0;
+    color: #f36f21;
     font-size: 14px;
     padding: 12px;
 }
@@ -1416,7 +1417,7 @@ p.price-hotel-now {
 
 .pricedt {
     float: left;
-    background: #59aeca;
+    background: #0082ca;
     color: #fff;
     height: 57px;
     padding-left: 15px;
@@ -1466,7 +1467,7 @@ p.price-hotel-now {
 }
 
 a.dowlse {
-    background: #3167B0;
+    background: #f36f21;
     margin-bottom: 15px;
     display: inline-block;
     padding: 11px 21px;
@@ -1477,7 +1478,7 @@ a.dowlse {
 }
 
 .priseright a.dowlse:hover {
-    background: #59aeca;
+    background: #0082ca;
 }
 
 .priseright a.dowlse i {
@@ -1487,7 +1488,7 @@ a.dowlse {
 }
 
 .priseright p a {
-    color: #3167B0;
+    color: #f36f21;
 }
 
 .listhotelrrom {
@@ -1544,7 +1545,7 @@ a.dowlse {
     color: #fff;
     padding: 8px 18px;
     margin-left: -8px;
-    background: url(../artseed/iconwhy.png) no-repeat 9px 6px #3167B0;
+    background: url(../artseed/iconwhy.png) no-repeat 9px 6px #f36f21;
     padding-left: 33px;
     padding-right: 10px;
     margin-right: 15px;
@@ -1638,7 +1639,7 @@ a.dowlse {
 /***************/
 
 .viewdetailhotel-title {
-    background: #59aeca;
+    background: #0082ca;
     height: 50px;
     /* border-left: 1px solid #f5f7fa; */
     color: #f5f7fa;
@@ -1666,7 +1667,7 @@ a.dowlse {
 }
 
 .content-hotel-select h3 a {
-    color: #59aeca;
+    color: #0082ca;
     font-size: 14px;
 }
 
@@ -1762,7 +1763,7 @@ a.dowlse {
     content: "\f00c";
     padding-right: 7px;
     font: normal normal normal 11px/1 FontAwesome;
-    color: #59aeca;
+    color: #0082ca;
 }
 
 .list-more-option ul li {
@@ -1772,7 +1773,7 @@ a.dowlse {
 }
 
 .tieusemore {
-    color: #59aeca;
+    color: #0082ca;
     font-size: 15px;
 }
 
@@ -1820,7 +1821,7 @@ a.dowlse {
 .hotel-tab-info ul li {}
 
 .hotel-tab-info ul li.active a {
-    color: #3167B0;
+    color: #f36f21;
 }
 
 .hotel-tab-info ul li a {
@@ -1831,7 +1832,7 @@ a.dowlse {
     float: left;
     background: #f5f7fa;
     width: 100%;
-    border: 1px solid #3167B0;
+    border: 1px solid #f36f21;
 }
 
 .information-hotel form {
@@ -1854,11 +1855,11 @@ a.dowlse {
 }
 
 .information-hotel form button.viewgia:hover {
-    background: #59aeca
+    background: #0082ca
 }
 
 .information-hotel form button.viewgia {
-    background: #3167B0;
+    background: #f36f21;
     border: none;
     color: #fff;
     font-size: 15px;
@@ -1903,7 +1904,7 @@ div#datetimepicker4 input {
 }
 
 .tit-vieworom {
-    background: #3167B0;
+    background: #f36f21;
     color: #Fff;
     padding: 9px 0;
     padding-left: 10px;
@@ -1940,11 +1941,11 @@ p.map-hotel a,
 }
 
 p.pointed span {
-    color: #59aeca;
+    color: #0082ca;
 }
 
 p.pointed i {
-    background: #59aeca;
+    background: #0082ca;
     color: #fff;
     font-style: normal;
     padding: 2px 3px;
@@ -1958,7 +1959,7 @@ p.pointed i:after {
     height: 0px;
     border-bottom: 7px solid transparent;
     border-top: 0px solid transparent;
-    border-left: 8px solid #59aeca;
+    border-left: 8px solid #0082ca;
     /* Tam gi?c tr?i du?c d? m?u */
     position: absolute;
     right: 3px;
@@ -1984,7 +1985,7 @@ p.pointed i:after {
 .section-view-more a {
     text-transform: uppercase;
     font-size: 12px;
-    color: #59aeca;
+    color: #0082ca;
 }
 
 .section-view-more a span {
@@ -1995,12 +1996,12 @@ p.pointed i:after {
     margin-top: 8px;
     height: 25px;
     display: inline-block;
-    border: 2px solid #3167B0;
+    border: 2px solid #f36f21;
 }
 
 .section-view-more a span i {
     font-size: 19px;
-    color: #3167B0;
+    color: #f36f21;
     line-height: 22px;
 }
 
@@ -2017,7 +2018,7 @@ p.pointed i:after {
     position: absolute;
     right: 0;
     top: 0;
-    background: #59aeca;
+    background: #0082ca;
     display: inline-block;
 }
 
@@ -2029,12 +2030,13 @@ p.pointed i:after {
 }
 
 .viewmoretour span {
-    background: #3167B0;
+    background: #f36f21;
     padding: 5px 1px;
     text-align: center;
     font-size: 15px;
     width: 30px;
     height: 28px;
+    margin-right: -1px;
     display: inline-block;
 }
 
@@ -2057,7 +2059,7 @@ p.pointed i:after {
 }
 
 .content-addeat-thuexe h3 a:hover {
-    color: #3167B0
+    color: #f36f21
 }
 
 .content-addeat-thuexe ul li {
@@ -2080,7 +2082,7 @@ p.pointed i:after {
     text-transform: uppercase;
     font-size: 28px;
     color: #444;
-    border-bottom: 2px solid #3167B0;
+    border-bottom: 2px solid #f36f21;
     padding-bottom: 7px;
     margin-bottom: 20px;
 }
@@ -2105,7 +2107,7 @@ a.btn.prevthuetab_key_1 i {
     height: auto;
     margin: 0;
     width: auto;
-    color: #3167B0;
+    color: #f36f21;
 }
 
 .content-thuexe {
@@ -2118,7 +2120,7 @@ a.btn.prevthuetab_key_1 i {
 }
 
 .content-thuexe h3 a:hover {
-    color: #3167B0;
+    color: #f36f21;
 }
 
 .short-thuexe {
@@ -2140,7 +2142,7 @@ a.btn.prevthuetab_key_1 i {
 }
 
 .images-tour-home strong.adstour {
-    background: #59aeca;
+    background: #0082ca;
     width: 100%;
     display: block;
     height: 30px;
@@ -2181,7 +2183,7 @@ a.btn.prevthuetab_key_1 i {
 .content-hotel-home h3 a:hover,
 .home-pr-air h3 a:hover,
 .mse ul li a:hover {
-    color: #59aeca;
+    color: #0082ca;
 }
 
 .content-open h3 {
@@ -2191,7 +2193,7 @@ a.btn.prevthuetab_key_1 i {
 }
 
 .salestour {
-    background: #3167B0;
+    background: #f36f21;
     color: #fff;
     display: inline-block;
     padding: 8px;
@@ -2233,7 +2235,7 @@ a.btn.prevthuetab_key_1 i {
 }
 
 .content-addeat h3 a:hover {
-    color: #59aeca;
+    color: #0082ca;
 }
 
 .content-addeat p i {
@@ -2254,7 +2256,7 @@ a.btn.prevthuetab_key_1 i {
 }
 
 .content-addeat p.ro-price {
-    color: #59aeca;
+    color: #0082ca;
     font-size: 16px;
 }
 
@@ -2295,7 +2297,7 @@ ul.optiontour li:first-child {
 }
 
 ul.optiontour li strong.timetour {
-    color: #3167B0;
+    color: #f36f21;
 }
 
 ul.optiontour li img {
@@ -2304,6 +2306,7 @@ ul.optiontour li img {
 
 p.price-old {
     margin-left: 10px;
+    margin-bottom: 10px;
 }
 
 p.price-old strong {
@@ -2311,13 +2314,13 @@ p.price-old strong {
 }
 
 p.now-price {
-    color: #59aeca;
+    color: #0082ca;
     font-size: 22px;
     margin-left: 10px;
 }
 
 .ordernow a:hover {
-    background: #59aeca;
+    background: #0082ca;
 }
 
 .ordernow {
@@ -2326,14 +2329,14 @@ p.now-price {
 }
 
 .ordernow a {
-    background: #3167B0;
+    background: #f36f21;
     display: inline-block;
     color: #fff;
     padding: 10px 15px;
     border-radius: 4px;
     position: absolute;
-    right: 13px;
-    bottom: 14px;
+    right: 5px;
+    bottom: 5px;
 }
 
 .home-pr-air {
@@ -2366,7 +2369,7 @@ p.now-price {
     top: 0;
     width: 100%;
     height: 193px;
-    background: #59aeca;
+    background: #0082ca;
     content: "";
     z-index: -1;
 }
@@ -2388,7 +2391,7 @@ p.des {
 }
 
 p.act-detail {
-    background: #3167B0;
+    background: #f36f21;
 }
 
 .image-xe {
@@ -2436,8 +2439,8 @@ a.btn.nextProTab_key_1 {
 }
 
 .air_slide .customNavigation a:hover i {
-    border: 2px solid #3167B0;
-    color: #3167B0;
+    border: 2px solid #f36f21;
+    color: #f36f21;
 }
 
 .customNavigation a i {
@@ -2451,7 +2454,7 @@ a.btn.nextProTab_key_1 {
 }
 
 p.price-air {
-    background: #59aeca;
+    background: #0082ca;
     font-size: 16px;
 }
 
@@ -2485,7 +2488,7 @@ p.price-air {
 }
 
 .main-news-home h3 a {
-    color: #59aeca;
+    color: #0082ca;
 }
 
 .content-main-home {
@@ -2498,7 +2501,7 @@ p.price-air {
 a.view-more-news-home {
     clear: both;
     float: left;
-    background: #3167B0;
+    background: #f36f21;
     margin-top: 0px;
     padding: 10px;
     color: #fff;
@@ -2509,7 +2512,7 @@ p.calender-news-home {
     clear: both;
     margin-top: -25px;
     float: right;
-    color: #59aeca;
+    color: #0082ca;
 }
 
 p.calender-news-home i {
@@ -2518,14 +2521,14 @@ p.calender-news-home i {
 
 .block-news-home ul li {
     float: left;
-    background: #59aeca;
+    background: #0082ca;
     padding: 16px 10px;
     margin-bottom: 5px;
     border-radius: 0 0 0 18px;
 }
 
 .block-news-home ul li:hover {
-    background: #3167B0;
+    background: #f36f21;
 }
 
 .block-news-home ul li img {
@@ -2548,8 +2551,8 @@ p.calender-news-home i {
 }
 
 .customNavigationaddress a:hover i {
-    border: 2px solid #3167B0;
-    color: #3167B0;
+    border: 2px solid #f36f21;
+    color: #f36f21;
 }
 
 .customNavigationaddress a i {
@@ -2638,7 +2641,7 @@ p.calender-news-home i {
 }
 
 .home-add-info p strong {
-    color: #59aeca;
+    color: #0082ca;
 }
 
 .product_cate {
@@ -2689,7 +2692,7 @@ p.calender-news-home i {
 }
 
 .feedtop {
-    background: #3167B0;
+    background: #f36f21;
     color: #fff;
     padding-bottom: 10px;
     position: relative;
@@ -2794,12 +2797,12 @@ p.view-images {
     padding: 7px 35px;
     height: 46px;
     width: 246px;
-    background: #59aeca;
+    background: #0082ca;
     bottom: 0;
 }
 
 p.view-images:hover {
-    background: #3167B0;
+    background: #f36f21;
 }
 
 .formmail-image {
@@ -2841,19 +2844,23 @@ p.view-images a {
 
 .footer-address {
     background: #efefef;
-    padding: 20px 0;
+    padding: 10px 0;
     margin-top: 10px;
 }
 
 .mse {
     clear: both;
     margin-top: 11px;
-    float: left;
+}
+
+.mse h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .mse h3 a {
     text-transform: uppercase;
-    color: #59aeca;
+    color: #0082ca;
     font-size: 14px;
 }
 
@@ -2938,7 +2945,7 @@ a.view-news-more:hover {
 .formbanner {
     width: 27%;
     float: left;
-    background: #59aeca;
+    background: #0082ca;
     display: block;
     position: absolute;
     border-radius: 5px;
@@ -2983,21 +2990,19 @@ div#datetimepicker1 {
 }
 
 div#datetimepicker1 i {
-    float: left;
-    background: #fff;
     height: 30px;
     line-height: 30px;
     width: 30px;
-    text-align: center;
+    z-index: 99;
 }
 
 div#datetimepicker1 input {
-    width: 74%;
-    border: none;
+    width: 100%;
     border-radius: 0;
     height: 30px;
     box-shadow: none;
     color: #333;
+    position: relative;
 }
 
 .ngaykhoihanh {
@@ -3014,7 +3019,7 @@ button.sendsearchnow,
 .searhhotel {
     color: #fff;
     text-align: center;
-    background: #3167B0;
+    background: #f36f21;
     font-size: 13px;
     padding: 10px 30px;
     clear: both;
@@ -3050,7 +3055,7 @@ button.sendsearchnow,
 }
 
 .content-dmtop h3 {
-    color: #3167B0;
+    color: #f36f21;
     font-size: 22px;
     margin-bottom: 10px;
 }
@@ -3058,7 +3063,7 @@ button.sendsearchnow,
 .footer {
     clear: both;
     overflow: hidden;
-    background: #59aeca;
+    background: #0082ca;
     padding-top: 25px;
 }
 
@@ -3111,7 +3116,7 @@ a.hotlie {
     position: fixed;
     bottom: 5px;
     left: 5px;
-    background: #3167B0;
+    background: #f36f21;
     color: #fff;
     padding: 3px;
     font-weight: bold;
@@ -3156,7 +3161,7 @@ a.hotlie i {
 }
 
 .tit-res-detail {
-    border-bottom: 2px solid #3167B0;
+    border-bottom: 2px solid #f36f21;
     margin-bottom: 20px;
     padding-bottom: 7px;
     margin-top: 20px;
@@ -3237,7 +3242,7 @@ a.hotlie i {
 }
 
 .info-main-res p.ro-price strong {
-    color: #59aeca;
+    color: #0082ca;
     font-size: 15px;
 }
 
@@ -3266,19 +3271,23 @@ form.form-receive-mail input {
 
 .form-mail-home h3 {
     text-transform: uppercase;
-    color: #59aeca;
+    color: #0082ca;
+    font-size: 16px;
+    line-height: 23px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 form.form-receive-mail button {
     border: none;
     float: right;
-    background: #59aeca;
+    background: #0082ca;
     color: #fff;
     padding: 9px;
 }
 
 form.form-receive-mail button:hover {
-    background: #3167B0;
+    background: #f36f21;
 }
 
 .form_footer p {
@@ -3328,7 +3337,7 @@ h4.title_footer strong {
 }
 
 .info_footer ul li a:hover {
-    color: #3167B0;
+    color: #f36f21;
 }
 
 .info_footer ul li {
@@ -3360,7 +3369,7 @@ h4.title_footer.shop {
 }
 
 .productbreadcrumb ul li a strong {
-    color: #3167B0;
+    color: #f36f21;
 }
 
 .productbreadcrumb {
@@ -3377,7 +3386,7 @@ h4.title_footer.shop {
 
 .productbreadcrumb ul li a {
     margin-right: 8px;
-    color: #59aeca;
+    color: #0082ca;
 }
 
 .productbreadcrumb ul li a:hover {
@@ -3386,7 +3395,7 @@ h4.title_footer.shop {
 
 .productbreadcrumb ul li h1 {
     color: #fe7500;
-    font-family: Roboto, Helvetica, sans-serif;
+    font-family: Open Sans, Helvetica, sans-serif;
     font-size: 12px;
     float: left;
     font-weight: normal;
@@ -3396,13 +3405,13 @@ h4.title_footer.shop {
 
 .productbreadcrumb ul li span {
     position: relative;
-    color: #59aeca;
+    color: #0082ca;
 }
 
 .productbreadcrumb ul li span:before {
     margin-right: 8px;
     content: "\f105";
-    color: #59aeca;
+    color: #0082ca;
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
 }
@@ -3415,7 +3424,7 @@ h4.title_footer.shop {
 .tit-why {
     text-align: center;
     padding: 15px 10px;
-    color: #59aeca;
+    color: #0082ca;
     font-size: 24px;
 }
 
@@ -3548,7 +3557,7 @@ input[type=radio]:not(old):checked+label>span>span {
 }
 
 .info-bl-hotel h2 a:hover {
-    color: #3167B0;
+    color: #f36f21;
 }
 
 .info-bl-hotel h2 a {
@@ -3580,7 +3589,7 @@ input[type=radio]:not(old):checked+label>span>span {
 .content_block ul li label {
     font-weight: normal;
     float: left;
-    font-family: Roboto, Helvetica, sans-serif;
+    font-family: Open Sans, Helvetica, sans-serif;
 }
 
 .content_block.size ul li label {
@@ -3625,7 +3634,7 @@ input[type=radio]:not(old):checked+label>span>span {
 .block-dm-tx ul li:hover:before,
 .block-dm-tx ul li.active a,
 .block-dm-tx ul li.active:before {
-    color: #3167B0;
+    color: #f36f21;
 }
 
 .block-dm-tx ul li {
@@ -3644,12 +3653,12 @@ input[type=radio]:not(old):checked+label>span>span {
 .block-advice {
     clear: both;
     background: #fff6f0;
-    border: 1px solid #3167B0;
+    border: 1px solid #f36f21;
     margin-bottom: 20px;
 }
 
 .title-block-advice {
-    background: #3167B0;
+    background: #f36f21;
     height: 40px;
     line-height: 40px;
     color: #fff;
@@ -3682,7 +3691,7 @@ input[type=radio]:not(old):checked+label>span>span {
 }
 
 .info-advice p.number {
-    color: #3167B0;
+    color: #f36f21;
     font-size: 14px;
 }
 
@@ -3709,7 +3718,7 @@ input[type=radio]:not(old):checked+label>span>span {
     color: #fff;
     font-size: 16px;
     padding: 10px;
-    background: #3167B0;
+    background: #f36f21;
     border-radius: 15px 0 15px 0;
 }
 
@@ -3736,7 +3745,7 @@ input[type=radio]:not(old):checked+label>span>span {
 }
 
 .item-hotel-related h3 a:hover {
-    color: #3167B0;
+    color: #f36f21;
 }
 
 .item-hotel-related h3 {
@@ -3750,7 +3759,7 @@ input[type=radio]:not(old):checked+label>span>span {
 .title_page {
     position: relative;
     clear: both;
-    border-bottom: 2px solid #3167B0;
+    border-bottom: 2px solid #f36f21;
     margin-bottom: 30px;
 }
 
@@ -4076,7 +4085,7 @@ ul.content_block-news-image li h3 {
 
 .block_search_poduct .content_block ul li ul li a {
     font-weight: normal;
-    font-family: Roboto;
+    font-family: Open Sans;
     line-height: 30px;
     position: relative;
     font-size: 14px;
@@ -4086,7 +4095,7 @@ ul.content_block-news-image li h3 {
 }
 
 .content_block ul li.first-li a {
-    color: #59aeca;
+    color: #0082ca;
     font-size: 14px;
     margin: 15px 0 !important;
 }
@@ -4099,7 +4108,7 @@ ul.content_block-news-image li h3 {
 
 .block_search_poduct ul li ul li.active a,
 .block_search_poduct ul li ul li a:hover {
-    color: #3167B0;
+    color: #f36f21;
 }
 
 .content_block.color ul li span {
@@ -4198,7 +4207,7 @@ div#bx-pager-tour {}
 }
 
 .content-block-news-cm ul li h3 a:hover {
-    color: #3167B0;
+    color: #f36f21;
 }
 
 .content-block-news-cm ul li h3 a {
@@ -4213,7 +4222,7 @@ div#bx-pager-tour {}
 .title-info-nb h2,
 .tit-bv-view {
     margin: 0;
-    background: #3167B0;
+    background: #f36f21;
     display: inline-block;
     color: #fff;
     font-size: 16px;
@@ -4227,7 +4236,7 @@ div#bx-pager-tour {}
 }
 
 .option-right-tour {
-    background: #59aeca;
+    background: #0082ca;
     padding-bottom: 5px;
     margin-bottom: 20px;
 }
@@ -4255,11 +4264,11 @@ div#bx-pager-tour {}
 
 .contact-order-tour {
     background: #fff6f0;
-    border: 1px solid #3167B0;
+    border: 1px solid #f36f21;
 }
 
 .tit-contact-order {
-    background: #3167B0;
+    background: #f36f21;
     color: #fff;
     padding: 10px 15px;
     text-align: center;
@@ -4291,7 +4300,7 @@ div#bx-pager-tour {}
 }
 
 .info-mem-order p.phone-order-meme {
-    color: #3167B0;
+    color: #f36f21;
     font-size: 14px;
 }
 
@@ -4300,7 +4309,7 @@ div#bx-pager-tour {}
 }
 
 .pop-lh-tour {
-    background: #59aeca;
+    background: #0082ca;
     display: inline-block;
     padding: 12px 18px;
     margin: 10px 20px 20px 10px;
@@ -4318,7 +4327,7 @@ div#bx-pager-tour {}
 .optiono-nb-tour ul li:before {
     content: "\f054";
     padding-right: 4px;
-    color: #59aeca;
+    color: #0082ca;
     font: normal normal normal 10px/1 FontAwesome;
 }
 
@@ -4328,7 +4337,7 @@ div#bx-pager-tour {}
 }
 
 .detail-tour ul li.active a {
-    color: #3167B0;
+    color: #f36f21;
     border-bottom: 1px solid #ddd;
 }
 
@@ -4350,7 +4359,7 @@ div#bx-pager-tour {}
 }
 
 .tab-tit-tour {
-    background: #59aeca;
+    background: #0082ca;
     display: inline-block;
     padding: 12px 20px;
     color: #fff;
@@ -4366,7 +4375,7 @@ div#bx-pager-tour {}
 }
 
 .optiono-nb-tour {
-    border: 1px solid #3167B0;
+    border: 1px solid #f36f21;
     margin-top: 20px;
     padding: 15px;
     float: left;
@@ -4684,24 +4693,48 @@ a.nivo-nextNav {
 }
 
 a.nivo-prevNav:before {
-    position: absolute;
+    /*position: absolute;
     content: "";
     left: 14px;
     top: 9px;
     width: 33px;
     height: 59px;
     color: #fff;
-    background: url(../artseed/icon_sl_prev.png)
+    background: url(../artseed/icon_sl_prev.png)*/
+
+    position: absolute;
+    color: #fff;
+    content: "\f104";
+    left: 14px;
+    top: 9px;
+    width: 33px;
+    z-index: 111;
+    height: 59px;
+    font-size: 50px;
+    text-indent: 0;
+    font-family: FontAwesome;
 }
 
 a.nivo-nextNav:before {
-    position: absolute;
+    /*position: absolute;
     content: "";
     background: url(../artseed/icon_sl_next.png);
     right: 14px;
     top: 9px;
     width: 33px;
+    height: 59px;*/
+
+    position: absolute;
+    color: #fff;
+    content: "\f105";
+    left: 14px;
+    top: 9px;
+    width: 33px;
+    z-index: 111;
     height: 59px;
+    font-size: 50px;
+    text-indent: 0;
+    font-family: FontAwesome;
 }
 
 .product_banner_mediate img {
@@ -4778,7 +4811,7 @@ li.pr-home-related {
 }
 
 .content_contact {
-    font-family: Roboto;
+    font-family: Open Sans;
     font-size: 14px;
     border-bottom: 2px solid #ccc;
     margin-bottom: 20px;
@@ -4799,7 +4832,7 @@ li.pr-home-related {
 }
 
 .Contact {
-    font-family: Roboto;
+    font-family: Open Sans;
     font-size: 12px;
 }
 
@@ -4810,7 +4843,7 @@ li.pr-home-related {
 
 .Main404 {
     font-size: 14px;
-    font-family: Roboto, Helvetica, sans-serif;
+    font-family: Open Sans, Helvetica, sans-serif;
 }
 
 .BgImg404 {
@@ -4832,7 +4865,7 @@ li.pr-home-related {
 }
 
 .Text404 a {
-    color: #59aeca;
+    color: #0082ca;
 }
 
 .Text404 a:hover {
@@ -5139,7 +5172,7 @@ li.list_cart_detail select {
     height: 32px;
     line-height: 34px;
     border-bottom: 1px solid #eee;
-    color: #59aeca;
+    color: #0082ca;
     margin-bottom: 10px;
 }
 
@@ -5149,7 +5182,7 @@ li.list_cart_detail select {
     height: 32px;
     line-height: 34px;
     border-bottom: 1px solid #eee;
-    color: #59aeca;
+    color: #0082ca;
     margin-top: 20px;
     margin-bottom: 10px;
 }
@@ -5160,7 +5193,7 @@ li.list_cart_detail select {
     height: 32px;
     line-height: 34px;
     border-bottom: 1px solid #eee;
-    color: #59aeca;
+    color: #0082ca;
     margin-bottom: 10px;
     clear: both;
 }
@@ -5243,7 +5276,7 @@ form.form-order-tour .input-icon textarea {
 
 .artseed-list-member-join {
     font-size: 16px;
-    color: #3167B0;
+    color: #f36f21;
     margin-bottom: 20px;
     clear: both;
 }
@@ -5272,7 +5305,7 @@ form.form-order-tour .input-icon textarea {
     display: inline-block;
     background: #eee;
     margin: 7px 3px 0;
-    color: #59aeca;
+    color: #0082ca;
     border: 1px solid#eee;
     width: 21px;
     padding: 1px 5px;
@@ -5294,11 +5327,11 @@ form.form-order-tour .input-icon textarea {
 }
 
 .btn-order-tour button:hover {
-    background: #59aeca;
+    background: #0082ca;
 }
 
 .btn-order-tour button {
-    background: #3167B0;
+    background: #f36f21;
     color: #fff;
     display: inline-block;
     border: none;
@@ -5331,7 +5364,7 @@ span.line-orange {
     float: left;
     width: 100%;
     height: 2px;
-    background: #3167B0;
+    background: #f36f21;
 }
 
 .date-view {
@@ -5340,13 +5373,13 @@ span.line-orange {
 }
 
 .date-view span.dates {
-    background: #3167B0;
+    background: #f36f21;
     padding: 3px 5px;
     font-size: 12px;
 }
 
 .date-view span.views {
-    background: #59aeca;
+    background: #0082ca;
     font-size: 12px;
     padding: 3px 5px;
 }
@@ -5393,7 +5426,7 @@ span.line-orange {
 
 .content-pics-list h3 a:hover,
 .pos-main-pics h3 a:hover {
-    color: #59aeca;
+    color: #0082ca;
 }
 
 .content-pics-list h3 {}
@@ -5433,7 +5466,7 @@ span.line-orange {
 .item-hover-list-pics a {
     color: #fff;
     text-transform: uppercase;
-    background: url(../artseed/icon-list-pics.png) no-repeat 14px 6px #59aeca;
+    background: url(../artseed/icon-list-pics.png) no-repeat 14px 6px #0082ca;
     padding: 13px 19px 13px 55px;
     border-radius: 5px;
     display: block;
@@ -6171,7 +6204,7 @@ span.line-orange {
         /* position: absolute; */
         right: 0;
         margin: 0;
-        font-family: Roboto;
+        font-family: Open Sans;
         color: #fff;
         font-size: 20px;
         height: 45px;
@@ -6489,7 +6522,7 @@ span.line-orange {
     }
     .panel-title a span {
         color: #fff;
-        background: #3167B0;
+        background: #f36f21;
         padding-left: 0;
         float: left;
         text-align: center;
@@ -6792,7 +6825,7 @@ td {
     -moz-transition: 0.5s ease-in-out;
     -o-transition: 0.5s ease-in-out;
     cursor: pointer;
-    background: #59aeca;
+    background: #0082ca;
     width: 45px;
     height: 45px;
     text-align: center;
@@ -6885,8 +6918,8 @@ td {
 
 .pagination ul li:hover,
 .pagination span:hover {
-    color: #59aeca;
-    border: 1px solid #59aeca;
+    color: #0082ca;
+    border: 1px solid #0082ca;
 }
 
 .item-video-list {
@@ -6963,7 +6996,7 @@ a.view-video {
 }
 
 .artseed-item-content-video h3 a:hover {
-    color: #59aeca;
+    color: #0082ca;
 }
 
 .artseed-item-content-video h3 {
@@ -6995,12 +7028,15 @@ a.view-video {
   border-radius: 7px;
 }
 .form-dv {
-  background: #18983d;
-  padding: 10px 10px 0 10px;
-  text-align: center;
-  display: none;
-  clear: both;
-  overflow: hidden;
+    background: #ffffff;
+    padding: 10px 10px 0 10px;
+    text-align: center;
+    display: none;
+    clear: both;
+    overflow: hidden;
+    -webkit-box-shadow: -2px 0px 4px -1px rgba(143,143,143,1);
+    -moz-box-shadow: -2px 0px 4px -1px rgba(143,143,143,1);
+    box-shadow: -2px 0px 4px -1px rgba(143,143,143,1);
 }
 .form-dv div {
   clear: both;
@@ -7009,7 +7045,7 @@ a.view-video {
   margin: 7px 0px;
 }
 .title-form-tv {
-  background: #f36f21;
+  background: #0082ca;
   color: #fff;
   padding: 10px 6px;
   text-align: center;
@@ -7017,12 +7053,13 @@ a.view-video {
   text-transform: uppercase;
   font-weight: bold;
 }
-.form-dv input {
+.form-dv input,
+.form-dv select {
   float: left;
   width: 100%;
   border-radius: 0;
   box-shadow: none;
-  border: none;
+  border: 1px solid #ccc;
 }
 .ngaydi div {
   float: right !important;
@@ -7040,10 +7077,71 @@ a.view-video {
 }
 input.codecapcha {
   width: 59% !important;
-  border: none;
   border-radius: 0;
   height: 35px;
   box-shadow: none;
   color: #333;
   margin-bottom: 10px;
+}
+.title_footer {
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: 12px;
+}
+.title_footer.shop {
+    color: #fff;
+    font-size: 15px;
+}
+.info_footer .col-foter {
+    width: 33%;
+    float: left;
+}
+.footer p a {
+    color: #fff;
+}
+
+/*===== Back To Top =====*/
+.td-scroll-up {
+  cursor: pointer;
+  position: fixed;
+  bottom: 4px;
+  right: 5px;
+  width: 40px;
+  height: 40px;
+  background-color: #252525;
+  z-index: 1;
+  transform: translate3d(0, 70px, 0);
+  -webkit-transform: translate3d(0, 70px, 0);
+  -moz-transform: translate3d(0, 70px, 0);
+  -ms-transform: translate3d(0, 70px, 0);
+  -o-transform: translate3d(0, 70px, 0);
+  -webkit-transition: transform 0.4s cubic-bezier(0.55, 0, 0.1, 1) 0s;
+  -moz-transition: transform 0.4s cubic-bezier(0.55, 0, 0.1, 1) 0s;
+  -o-transition: transform 0.4s cubic-bezier(0.55, 0, 0.1, 1) 0s;
+  transition: transform 0.4s cubic-bezier(0.55, 0, 0.1, 1) 0s;
+}
+.td-scroll-up-visible {
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+}
+.td-scroll-up i {
+  position: relative;
+  color: #fff;
+  font-size: 20px;
+  display: block;
+  text-align: center;
+  width: 40px;
+  top: 7px;
+}
+.td-scroll-up:hover {
+  color: #fff;
+  background: #707070;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
 }

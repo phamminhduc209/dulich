@@ -3,6 +3,54 @@
         width: 1230px;
     }
 }
+@media ( min-width:1200px) {
+    .sol-container.sol-active .sol-selection-container {}
+    .left_footer {
+        float: left;
+        width: 65%;
+    }
+    .info_footer {
+        float: right;
+        width: 35%;
+    }
+    .logo_footer {
+        width: 26%;
+    }
+    .info_footer_left {
+        width: 74%;
+    }
+    .more-hotel-option {
+        height: 34px;
+        line-height: 34px;
+    }
+    .main-news img {
+        height: 100%;
+        width: 100%;
+    }
+    .info_footer:nth-child(3) {
+        width: 38%;
+    }
+    .option-mains-news {
+        margin-top: 3px;
+    }
+    .no-padding-right {
+        padding-right: 0;
+    }
+    li.list-new-mains {
+        width: 50%;
+        margin: 0px 0px;
+        padding: 5px 5px;
+    }
+    .row_padding_10 {
+        margin: 0px -5px 0 0px;
+        margin-top: -6px;
+        float: left;
+    }
+    .slider-2 img.img2 {
+        margin-left: -385px;
+    }
+}
+
 @media (max-width: 1199px) {
     body {
         font-size: 12px;

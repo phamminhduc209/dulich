@@ -66,7 +66,10 @@ ul li,
 ol li {
   list-style: none;
 }
-h1, h2, h3, h4, h5, h6, p { margin: 0;}
+h1, h2, h3, h4, h5, h6, p { 
+    margin: 0;
+    font-size: inherit;
+}
 
 .topbar {
     background-color: #e5e5e5;
@@ -1114,6 +1117,7 @@ p.dates i {
     line-height: 22px;
     margin-bottom: 9px;
     overflow: hidden;
+    margin-top: 3px
 }
 
 .info-news-item h3 a {
@@ -1123,6 +1127,7 @@ p.dates i {
 
 .info-news-item p {
     color: #888;
+    margin-bottom: 10px;
 }
 
 .info-news-item p i {
@@ -5347,9 +5352,11 @@ form.form-order-tour .input-icon textarea {
 .artseed-item-pics {
     position: relative;
 }
+.artseed-item-pics img {
+    width: 100%;
+}
 
-.pos-main-pics,
-.content-pics-list {
+.pos-main-pics {
     position: absolute;
     bottom: 0;
     color: #fff;
@@ -5388,8 +5395,8 @@ span.line-orange {
 }
 
 .pos-main-pics h3 {
-    margin-left: 15px;
-    margin-right: 15px;
+    margin: 10px 15px;
+    font-size: 16px;
 }
 
 .pos-main-pics h3 a {
@@ -5410,29 +5417,6 @@ span.line-orange {
     height: 100%;
     object-fit: scale-down !important;
 }
-
-.content-pics-list p {
-    margin-bottom: 0;
-    color: #999;
-    font-size: 12px;
-}
-
-.content-pics-list p i {
-    margin-right: 5px;
-}
-
-.content-pics-list h3 a {
-    margin-top: 5px;
-    font-size: 16px;
-    line-height: 20px;
-}
-
-.content-pics-list h3 a:hover,
-.pos-main-pics h3 a:hover {
-    color: #0082ca;
-}
-
-.content-pics-list h3 {}
 
 .artseed-title-list-pics h3 {
     position: absolute;
@@ -6930,16 +6914,6 @@ td {
     margin-bottom: 20px;
 }
 
-.content-pics-list {
-    text-align: center;
-}
-
-.content-pics-list h3 a {
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 14px;
-}
-
 a.view-video {
     position: absolute;
     left: 50%;
@@ -7210,4 +7184,25 @@ input.codecapcha {
 }
 .content-box-hotline ul li:last-child {
   border-bottom: none;
+}
+.highslide {
+  outline: none;
+  text-decoration: none;
+}
+.image-list-pic img {
+  max-width: 88%;
+  object-fit: scale-down !important;
+  margin: 0 auto;
+}
+.highslide img {
+  cursor: url(https://kingtravel.tv/highslide/graphics/zoomin.cur), pointer !important;
+}
+.highslide img {
+  /* border: solid 1px #000000; */
+  border: none;
+}
+.highslide-heading {
+  display: none;
+  font-weight: bold;
+  margin: 0.4em;
 }

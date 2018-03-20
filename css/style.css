@@ -51,7 +51,7 @@ textarea, select, input[type="number"],
 input[type="tel"] {
   padding: 8px 10px;
   width: 100%;
-  border: none;
+  /*border: none;*/
   cursor: pointer;
 }
 b, strong {
@@ -2011,6 +2011,7 @@ p.pointed i:after {
     font-size: 19px;
     color: #f36f21;
     line-height: 22px;
+    font-style: normal;
 }
 
 .content_block .viewmoretour {
@@ -3120,7 +3121,7 @@ button.sendsearchnow,
     margin-top: 10px;
 }
 
-a.hotlie {
+.hotline {
     position: fixed;
     bottom: 5px;
     left: 5px;
@@ -3136,7 +3137,7 @@ a.hotlie {
     padding-right: 10px;
 }
 
-a.hotlie i {
+.hotline i {
     background: #c55b1d;
     width: 22px;
     height: 22px;
@@ -4402,7 +4403,7 @@ div#bx-pager-tour {}
 
 form.form-contact input {
     margin: 5px 0;
-    border-radius: 0;
+    /*border-radius: 0;*/
     box-shadow: none;
 }
 
@@ -4696,20 +4697,10 @@ a.nivo-nextNav {
     width: 35px;
     height: 35px;
     right: 10px;
-    position: relative;
     text-indent: -9999px;
 }
 
 a.nivo-prevNav:before {
-    /*position: absolute;
-    content: "";
-    left: 14px;
-    top: 9px;
-    width: 33px;
-    height: 59px;
-    color: #fff;
-    background: url(../artseed/icon_sl_prev.png)*/
-
     position: absolute;
     color: #fff;
     content: "\f104";
@@ -4724,14 +4715,6 @@ a.nivo-prevNav:before {
 }
 
 a.nivo-nextNav:before {
-    /*position: absolute;
-    content: "";
-    background: url(../artseed/icon_sl_next.png);
-    right: 14px;
-    top: 9px;
-    width: 33px;
-    height: 59px;*/
-
     position: absolute;
     color: #fff;
     content: "\f105";

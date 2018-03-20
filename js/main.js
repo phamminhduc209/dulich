@@ -95,13 +95,15 @@ function menuLeft() {
 		})
 	});
 
-	$(document).ready(function(){
-        $('.bxslidertour').bxSlider({
-        pagerCustom: '#bx-pager-tour',
-        auto: true,
-        autoControls: true
-        });
-    });
+	if($('.bxslidertour').length) {
+		$(document).ready(function(){
+	        $('.bxslidertour').bxSlider({
+	        pagerCustom: '#bx-pager-tour',
+	        auto: true,
+	        autoControls: true
+	        });
+	    });
+    }
 
 
 	$(document).ready(function() {

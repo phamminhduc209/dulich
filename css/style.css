@@ -617,20 +617,18 @@ screen and (max-width: 1024px) {
     margin: 10px 0;
 }
 
+.hotlinetop p b:before {
+    content: "\f10b";
+    font: normal normal normal 23px/1 FontAwesome;
+    padding: 0 6px;
+    vertical-align: middle;
+}
+
 .hotlinetop p span:before {
     content: "\f095";
     font: normal normal normal 18px/1 FontAwesome;
     padding: 0 6px;
     vertical-align: middle;
-}
-
-.hotlinetop p {
-    position: relative;
-    font-size: 16px;
-    background: url(../artseed/icon-phone.jpg) no-repeat left top;
-    height: 24px;
-    padding-left: 20px;
-    line-height: 25px;
 }
 
 .hotlinetop {
@@ -672,7 +670,7 @@ screen and (max-width: 1024px) {
 }
 
 .tophead {
-  background: url(../artseed/bgtop.png) no-repeat top center;
+  background: url(../images/bgtop.png) no-repeat top center;
   margin-bottom: 15px;
   padding: 0;
 }
@@ -1165,7 +1163,7 @@ a.view-detail:hover {
 
 .block-cm ul li {
     line-height: 35px;
-    background: url(../artseed/iconcm.jpg) no-repeat 0 9px;
+    background: url(../images/iconcm.jpg) no-repeat 0 9px;
     padding-left: 30px;
 }
 
@@ -1178,7 +1176,7 @@ a.view-detail:hover {
 }
 
 .block-cm ul li:hover {
-    background: url(../artseed/iconcm_hover.jpg) no-repeat 0 9px;
+    background: url(../images/iconcm_hover.jpg) no-repeat 0 9px;
 }
 
 .title_home {
@@ -1553,7 +1551,7 @@ a.dowlse {
     color: #fff;
     padding: 8px 18px;
     margin-left: -8px;
-    background: url(../artseed/iconwhy.png) no-repeat 9px 6px #f36f21;
+    background: url(../images/iconwhy.png) no-repeat 9px 6px #f36f21;
     padding-left: 33px;
     padding-right: 10px;
     margin-right: 15px;
@@ -1920,13 +1918,13 @@ div#datetimepicker4 input {
 
 .tit-vieworom p {
     margin: 0;
-    background: url(../artseed/iconwhy.png) no-repeat left top 0px;
+    background: url(../images/iconwhy.png) no-repeat left top 0px;
     padding-left: 25px;
     height: 19px;
 }
 
 .priseright p.saleshotel {
-    background: url(../artseed/icontag.jpg) no-repeat left top 0px;
+    background: url(../images/icontag.jpg) no-repeat left top 0px;
     padding-right: 0px;
     padding-left: 19px;
 }
@@ -2677,7 +2675,7 @@ p.calender-news-home i {
 }
 
 .feedback-home {
-    background: url(../artseed/bannerfeed.jpg) no-repeat left top;
+    background: url(../images/bannerfeed.jpg) no-repeat left top;
     /* width:100%; */
     min-height: 400px;
     margin-bottom: 20px;
@@ -2692,7 +2690,7 @@ p.calender-news-home i {
 }
 
 .title-feed {
-    background: url(../artseed/icon-kh.png) no-repeat left top;
+    background: url(../images/icon-kh.png) no-repeat left top;
     height: 81px;
     width: 81px;
     padding-left: 102px;
@@ -2820,7 +2818,7 @@ p.view-images:hover {
 }
 
 p.view-images a {
-    background: url(../artseed/iconview.png) no-repeat left top;
+    background: url(../images/iconview.png) no-repeat left top;
     height: 28px;
     display: block;
     text-transform: uppercase;
@@ -2914,7 +2912,7 @@ a.view_more_home_product:hover {
 }
 
 .starchoce {
-    background: url(../artseed/star.jpg) no-repeat;
+    background: url(../images/star.jpg) no-repeat;
     width: 14px;
     height: 13px;
     display: inline-block;
@@ -3040,7 +3038,7 @@ button.sendsearchnow,
 }
 
 .dmtc-top {
-    background: url(../artseed/bg-top.png) repeat;
+    background: url(../images/bg-top.png) repeat;
     margin-bottom: 15px;
 }
 
@@ -5158,7 +5156,7 @@ li.list_cart_detail select {
 }
 
 .title-order-tour-conctact {
-    background: url(../artseed/customer.png) no-repeat left;
+    background: url(../images/customer.png) no-repeat left;
     padding-left: 38px;
     height: 32px;
     line-height: 34px;
@@ -5168,7 +5166,7 @@ li.list_cart_detail select {
 }
 
 .title-order-tour-ordered {
-    background: url(../artseed/info_tour.png) no-repeat left;
+    background: url(../images/info_tour.png) no-repeat left;
     padding-left: 38px;
     height: 32px;
     line-height: 34px;
@@ -5179,7 +5177,7 @@ li.list_cart_detail select {
 }
 
 .title-info-pay {
-    background: url(../artseed/icon_pay.png) no-repeat left;
+    background: url(../images/icon_pay.png) no-repeat left;
     padding-left: 38px;
     height: 32px;
     line-height: 34px;
@@ -5189,7 +5187,7 @@ li.list_cart_detail select {
     clear: both;
 }
 
-.artseed-form-order-tour {
+.images-form-order-tour {
     margin: 12px 15px 0;
     ;
 }
@@ -5219,8 +5217,8 @@ form.form-order-tour .input-icon textarea {
     padding: 10px;
 }
 
-.artseed-start-dated p.start-dated,
-.artseed-sum-passenger p.sum-passenger {
+.images-start-dated p.start-dated,
+.images-sum-passenger p.sum-passenger {
     float: left;
     margin-right: 20px;
     margin-bottom: 0;
@@ -5229,34 +5227,34 @@ form.form-order-tour .input-icon textarea {
     width: 17%;
 }
 
-.artseed-start-dated ul li,
-.artseed-sum-passenger ul li {
+.images-start-dated ul li,
+.images-sum-passenger ul li {
     float: left;
     width: 20%;
     margin-right: 30px;
     text-align: left;
 }
 
-.artseed-start-dated,
-.artseed-sum-passenger {
+.images-start-dated,
+.images-sum-passenger {
     float: left;
     width: 75%;
 }
 
-.artseed-sum-passenger {
+.images-sum-passenger {
     clear: both;
 }
 
-.artseed-start-dated ul li select,
-.artseed-sum-passenger ul li select {
+.images-start-dated ul li select,
+.images-sum-passenger ul li select {
     width: 100px;
     float: left;
     height: 29px;
     border: 1px solid #ccc;
 }
 
-.artseed-start-dated ul li p,
-.artseed-sum-passenger ul li p {
+.images-start-dated ul li p,
+.images-sum-passenger ul li p {
     float: left;
     margin-right: 5px;
     font-size: 12px;
@@ -5265,7 +5263,7 @@ form.form-order-tour .input-icon textarea {
     text-align: right;
 }
 
-.artseed-list-member-join {
+.images-list-member-join {
     font-size: 16px;
     color: #f36f21;
     margin-bottom: 20px;
@@ -5332,10 +5330,10 @@ form.form-order-tour .input-icon textarea {
     border-radius: 5px;
 }
 
-.artseed-item-pics {
+.images-item-pics {
     position: relative;
 }
-.artseed-item-pics img {
+.images-item-pics img {
     width: 100%;
 }
 
@@ -5386,7 +5384,7 @@ span.line-orange {
     color: #fff;
 }
 
-.artseed-item-pics-list {
+.images-item-pics-list {
     padding-left: 0;
     margin-bottom: 15px;
 }
@@ -5401,24 +5399,24 @@ span.line-orange {
     object-fit: scale-down !important;
 }
 
-.artseed-title-list-pics h3 {
+.images-title-list-pics h3 {
     position: absolute;
     bottom: 10px;
     margin-left: 12px;
 }
 
-.artseed-item-content-list {
+.images-item-content-list {
     position: relative;
     display: block;
     margin-bottom: 30px;
 }
 
-.artseed-title-list-pics h3 a {
+.images-title-list-pics h3 a {
     color: #fff;
     font-size: 13px;
 }
 
-.artseed-item-content-list h3 {
+.images-item-content-list h3 {
     font-size: 12.5px;
     line-height: 20px;
 }
@@ -5436,7 +5434,7 @@ span.line-orange {
 .item-hover-list-pics a {
     color: #fff;
     text-transform: uppercase;
-    background: url(../artseed/icon-list-pics.png) no-repeat 14px 6px #0082ca;
+    background: url(../images/icon-list-pics.png) no-repeat 14px 6px #0082ca;
     padding: 13px 19px 13px 55px;
     border-radius: 5px;
     display: block;
@@ -5446,11 +5444,11 @@ span.line-orange {
     margin-left: 0px;
 }
 
-.artseed-item-content-list:hover .item-hover-list-pics {
+.images-item-content-list:hover .item-hover-list-pics {
     display: block;
 }
 
-.artseed-item-content-list:before {
+.images-item-content-list:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -5460,7 +5458,7 @@ span.line-orange {
     display: none;
 }
 
-.artseed-item-content-list:hover:before {
+.images-item-content-list:hover:before {
     display: block
 }
 
@@ -5658,7 +5656,7 @@ span.line-orange {
 }
 
 @media ( max-width: 991px) {
-    .artseed-main-option-pics {
+    .images-main-option-pics {
         overflow-y: scroll;
         height: 267px;
     }
@@ -5672,22 +5670,22 @@ span.line-orange {
         height: 40px;
         overflow: hidden;
     }
-    .artseed-start-dated,
-    .artseed-sum-passenger {
+    .images-start-dated,
+    .images-sum-passenger {
         width: 100%;
     }
-    .artseed-start-dated ul,
-    .artseed-sum-passenger ul {
+    .images-start-dated ul,
+    .images-sum-passenger ul {
         float: left;
         width: 80%;
     }
-    .artseed-start-dated ul li,
-    .artseed-sum-passenger ul li {
+    .images-start-dated ul li,
+    .images-sum-passenger ul li {
         width: 29%;
         margin-right: 23px;
     }
-    .artseed-start-dated ul li p,
-    .artseed-sum-passenger ul li p {
+    .images-start-dated ul li p,
+    .images-sum-passenger ul li p {
         min-width: 60px;
     }
     .hotel-home-pr {
@@ -5977,16 +5975,16 @@ span.line-orange {
         float: left;
         width: 100%;
     }
-    .artseed-start-dated ul,
-    .artseed-sum-passenger ul {
+    .images-start-dated ul,
+    .images-sum-passenger ul {
         width: 100%;
     }
-    .artseed-start-dated p.start-dated,
-    .artseed-sum-passenger p.sum-passenger {
+    .images-start-dated p.start-dated,
+    .images-sum-passenger p.sum-passenger {
         margin-bottom: 15px;
     }
-    .artseed-start-dated ul li,
-    .artseed-sum-passenger ul li {
+    .images-start-dated ul li,
+    .images-sum-passenger ul li {
         margin-right: 10px;
     }
     .content_contact ul li {
@@ -6399,30 +6397,30 @@ span.line-orange {
 }
 
 @media ( max-width: 480px) {
-    .artseed-main-option-pics .row {
+    .images-main-option-pics .row {
         margin: 0;
     }
-    .artseed-item-pics-list {
+    .images-item-pics-list {
         padding-right: 0;
     }
     .content-pics-list {
         padding: 0;
     }
-    .artseed-main-option-pics {
+    .images-main-option-pics {
         width: 100%;
         overflow: hidden;
         height: auto;
         /* margin: 0 15px; */
         margin-top: 15px;
     }
-    .artseed-main-pics,
-    .artseed-item-video-list {
+    .images-main-pics,
+    .images-item-video-list {
         width: 100%;
     }
     {
         width: 100%;
     }
-    .artseed-content-list {
+    .images-content-list {
         width: 100%;
     }
     .info_footer,
@@ -6472,8 +6470,8 @@ span.line-orange {
     .addresspopular ul li.col-md-3.col-sm-6.col-xs-6 {
         width: 100%;
     }
-    .artseed-start-dated ul li,
-    .artseed-sum-passenger ul li {
+    .images-start-dated ul li,
+    .images-sum-passenger ul li {
         width: 100%;
     }
     .panel-title a {
@@ -6920,15 +6918,15 @@ a.view-video {
     display: block;
 }*/
 
-.artseed-image-video {
+.images-image-video {
     position: relative;
 }
 
-.artseed-image-video:hover .view-video {
+.images-image-video:hover .view-video {
     display: block;
 }
 
-.artseed-image-video:before {
+.images-image-video:before {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -6940,35 +6938,35 @@ a.view-video {
     display: none;
 }
 
-.artseed-image-video:hover:before {
+.images-image-video:hover:before {
     display: block;
 }
 
-.artseed-image-video a.view-video {
+.images-image-video a.view-video {
     width: 35px;
     height: 35px;
     line-height: 35px;
     font-size: 14px;
 }
 
-.artseed-item-content-video {
+.images-item-content-video {
     margin-bottom: 30px;
 }
 
-.artseed-item-content-video h3 a:hover {
+.images-item-content-video h3 a:hover {
     color: #0082ca;
 }
 
-.artseed-item-content-video h3 {
+.images-item-content-video h3 {
     height: 40px;
     margin-top: 10px;
 }
 
-.artseed-item-content-video h3 a {
+.images-item-content-video h3 a {
     font-size: 14px;
 }
 
-.artseed-main-video {
+.images-main-video {
     float: left;
     margin-bottom: 26px;
 }

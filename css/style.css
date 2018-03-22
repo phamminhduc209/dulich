@@ -19,6 +19,9 @@
 @import url(../lib/datepicker/bootstrap-datepicker3.css);
 @import url(../lib/bx-slider/jquery.bxslider.css);
 @import url(../lib/highslide/highslide.css);
+@import url(../lib/highslide/highslide.css);
+@import url(../lib/fancybox/jquery.fancybox.css);
+
 
 
 /*===== Layout Style =====*/
@@ -6762,25 +6765,6 @@ span.line-orange {
     }
 }
 
-table {
-    width: 100% !important;
-    height: auto !important;
-    border-collapse: collapse !important;
-    table-layout: auto !important;
-    border: 1px solid #ddd !important;
-}
-
-table tr:nth-child(2n+1) {
-    background-color: #f9f9f9;
-}
-
-td {
-    height: 30px !important;
-    padding: 10px 10px 0 10px !important;
-    border: 1px solid #ddd !important;
-    font-size: 13px;
-}
-
 .connect_fanpage {
     position: fixed;
     /* width: 300px; */
@@ -7197,4 +7181,16 @@ input.codecapcha {
 .artseed-item-content-video h3 {
   height: 40px;
   margin-top: 10px;
+}
+.artseed-item-pics-list {
+  padding-left: 0;
+  margin-bottom: 15px;
+}
+.artseed-item-content-list {
+  position: relative;
+  display: block;
+  margin-bottom: 30px;
+}
+.artseed-item-content-list:hover .item-hover-list-pics {
+  display: block;
 }

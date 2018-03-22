@@ -117,6 +117,35 @@ function menuLeft() {
          });
     });
 
+    hs.graphicsDir = '../lib/highslide/graphics/';
+    hs.align = 'center';
+    hs.transitions = ['expand', 'crossfade'];
+    hs.outlineType = 'rounded-white';
+    hs.wrapperClassName = 'controls-in-heading';
+    hs.fadeInOut = true;
+    hs.dimmingOpacity = 0.3;
+
+    // Add the controlbar
+    hs.addSlideshow({
+        //slideshowGroup: 'group1',
+        interval: 3500,
+        repeat: false,
+        useControls: true,
+        fixedControls: false,
+        overlayOptions: {
+            opacity: 1,
+            position: 'top right',
+            hideOnMouseOut: false
+        }
+    });
+    function showImage(img){
+        $('#viewImgBig').attr("href",img);
+        $('#viewImg').fadeOut(600, function() {
+            $('#viewImg').attr("src",img);
+            $('#viewImg').fadeIn(1000);
+        });
+    }
+
 })(jQuery); // End of use strict
 
 $(function(){

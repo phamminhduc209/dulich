@@ -18,6 +18,7 @@
 @import url(../lib/nivo-slider/nivo-slider.css);
 @import url(../lib/datepicker/bootstrap-datepicker3.css);
 @import url(../lib/bx-slider/jquery.bxslider.css);
+@import url(../lib/highslide/highslide.css);
 
 
 /*===== Layout Style =====*/
@@ -2853,6 +2854,7 @@ p.view-images a {
     background: #efefef;
     padding: 10px 0;
     margin-top: 10px;
+    display: none;
 }
 
 .mse {
@@ -3299,11 +3301,6 @@ form.form-receive-mail button:hover {
 
 .form_footer p {
     font-style: italic;
-}
-
-.info_footer .col-foter {
-    width: 50%;
-    float: left;
 }
 
 h4.title_footer {
@@ -5337,7 +5334,7 @@ form.form-order-tour .input-icon textarea {
     width: 100%;
 }
 
-.pos-main-pics {
+.pos-main-pics, .content-pics-list {
     position: absolute;
     bottom: 0;
     color: #fff;
@@ -5347,6 +5344,17 @@ form.form-order-tour .input-icon textarea {
     background: -o-linear-gradient(top, transparent 0%, #000 97%);
     background: -ms-linear-gradient(top, transparent 0%, #000 97%);
     background: linear-gradient(top, transparent 0%, #000 97%);
+}
+.content-pics-list {
+  text-align: center;
+}
+.content-pics-list h3 a {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 5px;
+    line-height: 20px;
+    padding: 5px;
 }
 
 span.line-orange {
@@ -5991,7 +5999,7 @@ span.line-orange {
         width: 100%;
     }
     .info_footer .col-foter {
-        width: 30%;
+        width: 50%;
         margin: 0 50px;
     }
     .copyright,
@@ -7052,10 +7060,6 @@ input.codecapcha {
     color: #fff;
     font-size: 15px;
 }
-.info_footer .col-foter {
-    width: 33%;
-    float: left;
-}
 .footer p a {
     color: #fff;
 }
@@ -7186,4 +7190,11 @@ input.codecapcha {
   display: none;
   font-weight: bold;
   margin: 0.4em;
+}
+.artseed-item-content-video {
+  margin-bottom: 30px;
+}
+.artseed-item-content-video h3 {
+  height: 40px;
+  margin-top: 10px;
 }

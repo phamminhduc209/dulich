@@ -1473,7 +1473,9 @@ p.price-hotel-now {
 .short-info {
     margin: 0 15px 15px;
     text-align: justify;
-    line-height: 20px;
+    line-height: 25px;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 a.dowlse {
@@ -2289,9 +2291,8 @@ a.btn.prevthuetab_key_1 i {
 }
 
 ul.optiontour {
-    padding: 0 10px 10px;
-    color: #888888;
-    font-size: 12px;
+    color: #000000;
+    font-size: 13px;
 }
 
 ul.optiontour li {
@@ -2303,7 +2304,6 @@ ul.optiontour li i {
 }
 
 ul.optiontour li:first-child {
-    height: 40px;
     overflow: hidden;
 }
 

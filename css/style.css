@@ -2166,8 +2166,8 @@ a.btn.prevthuetab_key_1 i {
 }
 
 .home-pr-tour h3 {
-    padding: 0 10px;
-    height: 55px;
+    padding: 5px 10px 0;
+    height: 45px;
     overflow: hidden;
     margin-bottom: 5px;
 }
@@ -2203,6 +2203,10 @@ a.btn.prevthuetab_key_1 i {
     line-height: 21px;
     margin-bottom: 0;
     margin-top: 10px;
+}
+
+.sales_tour {
+    padding: 0 10px;
 }
 
 .salestour {
@@ -2290,28 +2294,29 @@ a.btn.prevthuetab_key_1 i {
     color: #9c9c9c;
 }
 
-ul.optiontour {
+.optiontour {
+    padding: 0 10px;
     color: #000000;
     font-size: 13px;
 }
 
-ul.optiontour li {
+.optiontour li {
     line-height: 22px;
 }
 
-ul.optiontour li i {
+.optiontour li i {
     padding-right: 8px;
 }
 
-ul.optiontour li:first-child {
+.optiontour li:first-child {
     overflow: hidden;
 }
 
-ul.optiontour li strong.timetour {
+.optiontour li strong.timetour {
     color: #f36f21;
 }
 
-ul.optiontour li img {
+.optiontour li img {
     padding: 0 3px;
 }
 
@@ -2551,7 +2556,7 @@ p.calender-news-home i {
     float: left;
     margin: 0;
     width: 45%;
-    height: 56px;
+    height: 48px;
     margin-left: 7px;
     overflow: hidden;
 }

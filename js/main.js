@@ -1,5 +1,4 @@
 menuLeftOnload();
-
 function menuLeftOnload() {
 	var checkMneu = document.getElementById("mobile-menu-toggle").checked;
 	if (checkMneu == true) {
@@ -70,16 +69,16 @@ function menuLeft() {
 
     // ===== Scroll to Top ==== 
 	$(window).scroll(function() {
-	if ($(this).scrollTop() >= 200) {
-	  $('#return-to-top').addClass('td-scroll-up-visible');
-	} else {
-	  $('#return-to-top').removeClass('td-scroll-up-visible');
-	}
+		if ($(this).scrollTop() >= 200) {
+		  $('#return-to-top').addClass('td-scroll-up-visible');
+		} else {
+		  $('#return-to-top').removeClass('td-scroll-up-visible');
+		}
 	});
 	$('#return-to-top').click(function() {
-	$('body,html').animate({
-	  scrollTop : 0
-	}, 'slow');
+		$('body,html').animate({
+		  scrollTop : 0
+		}, 'slow');
 	});
 
     // $('#datetimepicker1').datetimepicker();
@@ -138,13 +137,10 @@ function menuLeft() {
             hideOnMouseOut: false
         }
     });
-    function showImage(img){
-        $('#viewImgBig').attr("href",img);
-        $('#viewImg').fadeOut(600, function() {
-            $('#viewImg').attr("src",img);
-            $('#viewImg').fadeIn(1000);
-        });
-    }
+
+    $('.salestour').each(function() {
+    	$(this).parent().addClass('sales_tour')
+    });
 
 })(jQuery); // End of use strict
 

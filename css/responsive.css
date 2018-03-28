@@ -7,17 +7,17 @@
     .sol-container.sol-active .sol-selection-container {}
     .left_footer {
         float: left;
-        width: 65%;
+        width: 50%;
     }
     .info_footer {
         float: right;
-        width: 35%;
+        width: 50%;
     }
     .logo_footer {
-        width: 26%;
+        width: 30%;
     }
     .info_footer_left {
-        width: 74%;
+        width: 70%;
     }
     .more-hotel-option {
         height: 34px;
